@@ -380,8 +380,8 @@ footer{
     
     /*  #f4f4f2  #010d23 */
     .navegacao{
-        color:rgb(0, 0, 0);
-        border: 2px solid #09c9c5;
+        color:#1e3359;
+        border: 2px solid #1e3359;
         background-color:#09c9c5;
     }
     .navegacao:hover{
@@ -397,8 +397,8 @@ footer{
         background-color:#1e3359;
     }
     #botao2, #botao3{
-        color:rgb(0, 0, 0);
-        border: 2px solid #09c9c5;
+        color:#1e3359;
+        border: 2px solid #1e3359;
         background-color:#09c9c5;
     }
     #botao2:hover, #botao3:hover{
