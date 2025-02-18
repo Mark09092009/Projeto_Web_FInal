@@ -252,4 +252,7 @@ footer{
     hr{
         background-color: rgb(183, 244, 244);
     }
+    nav{
+        color: azure;
+    }
 }
