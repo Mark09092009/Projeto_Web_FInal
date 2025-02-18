@@ -228,7 +228,7 @@ main{
     width: 100vh;
 }
 .noticias{
-    margin: 0 40px 0 40px;
+    margin: 0 40px 0 0;
     text-align: center;
 }
 .noticia{
@@ -236,7 +236,7 @@ main{
 }
 .paragrafos{
     text-align: start;
-    margin: 0 390px 0 400px;
+    margin: 0 390px 0 ;
     font-size: 20px;
 }
 .continuacao{
@@ -252,10 +252,9 @@ hr{
 
 /*Rodape*/
 footer{
-    margin-top: 20px;
     font-size: x-large;
     background-color:#010d23;
-    padding: 0 0 20px 0;
+    padding: 0 0 25px 0;
     color: azure;
 }
 #parteprincipalrodape{
