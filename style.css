@@ -1,0 +1,412 @@
+/*Exportar uma fonte externa*/
+@font-face{
+    font-family: 'Jersey';
+    src: url('Jersey/Fonte/Jersey10-Regular.ttf') format('truetype');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/*Titulo de cima nao aparecer em telas maiores*/
+.titulo2{
+    margin: 15px 100px 15px 100px;
+}
+/*Subtitulo da noticia 4*/
+#subtitulo4{
+    font-size: medium;
+}
+
+/*Cabecario*/
+header{
+    background-color:#010d23;
+    padding: 0 0 20px 0;
+}
+/*Logo*/
+#conteinertop{
+    display: flex;
+    justify-content: space-between;
+}
+/*Imagem do cabecario*/
+.logo1{
+    border-radius: 50%;
+    height: 120px;
+    margin: 15px;
+    border-radius: 20px;
+}
+/*Links do cabecario*/
+#conteinerbotao1{
+    margin: 20px 20px 0 0;
+}
+#conteinerbotao1 a{
+    margin: 10px;
+    text-decoration: none;
+    color: azure;
+}
+#conteinerbotao1 a:hover{
+    font-style: italic;
+    text-decoration:underline;
+}
+
+/*Parte principal do header*/
+#conteinerprincipal{
+    text-align: center;
+}
+/*Nome do site*/
+#nomesite{
+    color: azure;
+    font-size:85px;
+    font-family:Jersey;
+}
+/*Texto a baixo do nome do site*/
+#nomesite2{
+    color: azure;
+    font-size:medium;
+    margin: 0 10px 0 10px;
+}
+
+/*Frase filosofica*/
+#conteinerfilosofo{
+    color: azure;
+    text-align: center;
+    margin: 0 10px 50px 10px;
+}
+#filo1{
+    color: azure;
+    font-size: large;
+    font-style: italic;
+    margin: 0 0 10px 0;
+}
+
+/*Parte principal do site*/
+/*(onde fica as noticias)*/
+main{
+    font-size: large;
+}
+
+#lista{
+    padding: 10px 7px 10px 7px;
+    text-align: center;
+}
+.navegacao{
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid #010d23;
+    background-color:#f4f4f2;
+    text-decoration: none;
+    color: #010d23;
+    scroll-behavior: smooth;
+}
+.navegacao:hover{
+    color: #f4f4f2;
+    border: 2px solid #010d23;
+    background-color:#010d23;
+}
+#navbar{
+    display: flex;
+    flex-direction: column;
+    transition: top 0.3s;
+}
+#conteinernav_pai{
+    display: flex;
+    flex-direction: column;
+}
+.conteinernav_lista{
+    background-color: #17b2a2
+}
+
+/*Os links que estão no main*/
+#conteinernav{
+    display: flex;
+    position: relative;
+    padding: 12px 0 12px 0;
+    justify-content: space-evenly;
+    background-color: #055c72;
+}
+#conteinerlogo_fixed{
+    display: none;
+}
+#conteinernomeSite{
+    display: none;
+}
+#conteinernav a{
+    text-decoration: none;
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.fixed #conteinerlogo_fixed{
+    display: block;
+    width: 0vh;
+}
+.fixed #conteinernav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #055c72;
+    padding-top: 60px; /* 🔹 Adiciona espaço no topo quando fixo */
+}
+
+/* 🔹 Garante que a logo fique fixa no topo */
+#logoNomeContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left: 20px;
+    top: 5px; /* 🔹 Ajusta a logo para o topo */
+    height: 50px;
+}
+
+/* 🔹 Ajusta a altura da logo */
+#logoFixed {
+    height: 50px;
+    transition: height 0.3s ease-in-out;
+}
+
+/* 🔹 Ajusta o nome do site */
+#nomeSiteFixed {
+    font-size: 30px;
+    font-family: "jersey";
+    color: white;
+    transition: font-size 0.3s ease-in-out;
+}
+
+/* 🔹 Quando fixo, dá espaço extra para os links */
+.fixed #conteinernav {
+    padding-top: 90px;
+}
+
+#botao1, #botao2, #botao3{
+    border-radius: 2px;
+    padding: 5px 10px 5px 10px;
+}
+#botao1{
+    color: #f4f4f2;
+    border: 2px solid #010d23;
+    background-color:#010d23;
+}
+#botao2, #botao3{
+    color:#010d23;
+    border: 2px solid #010d23;
+    background-color:#f4f4f2;
+}
+#botao2:hover, #botao3:hover{
+    color: #f4f4f2;
+    border: 2px solid #010d23;
+    background-color:#010d23;
+}
+#botao1{
+    cursor: default;
+}
+
+#imagem7{
+    height: 70vh;
+    width: auto;
+}
+
+
+.ajustes_img{
+    height: 70vh;
+    width: auto; 
+}
+
+
+.imagens{
+    border-radius: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    height: auto;
+    width: 100vh;
+}
+.noticias{
+    margin: 0 40px 0 40px;
+    text-align: center;
+}
+.noticia{
+    text-align: center;
+}
+.paragrafos{
+    text-align: start;
+    margin: 0 390px 0 400px;
+    font-size: 20px;
+}
+.continuacao{
+    margin: auto;
+    width: 63%;
+}
+
+/*divisoes (hr)*/
+hr{
+    border: none;
+    background-color: rgb(0, 0, 0);
+}
+
+/*Rodape*/
+footer{
+    margin-top: 20px;
+    font-size: x-large;
+    background-color:#010d23;
+    padding: 0 0 20px 0;
+    color: azure;
+}
+#parteprincipalrodape{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.imagem{
+    height: 80px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+/*Telas menores/iguais a 1390px */
+@media (max-width:1390px){
+    .fixed #conteinernav {
+        padding-top: 95px; /* 🔹 Adiciona espaço no topo quando fixo */
+        gap: 3px;
+    }
+    
+    /* 🔹 Quando fixo, dá espaço extra para os links */
+    .fixed #conteinernav {
+        padding-top: 100px;
+    }
+    #conteinernav{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+        gap: 7px;
+        padding: 12px;
+    }
+
+    .descricao{
+        font-size: small;
+        margin: 10px 0 10px 0;
+        text-align: center;
+    }
+
+    #botao1, #botao2, #botao3{
+        text-align: center;
+        flex-wrap: wrap;
+        font-size: 18px;
+        padding: 5px;
+        width: 50%;
+    }
+    #lista{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+        gap: 5px; 
+        margin: 0;
+    }
+    .navegacao{
+        padding: 5px;
+        margin: 0;
+        flex: 1 1;
+    }
+    main{
+        margin: 0 ;
+    }
+    #nomesite{
+        font-size: 40px;
+        margin: 0 10px 0 10px;
+    }
+    .continuacao{
+        width: 100%;
+    }
+    .paragrafos{
+        flex: 0;
+        margin: 0;
+    }
+    .titulo2{
+        margin: 5px 0 5px 0;
+        text-align: start;
+        width: 100%;
+        flex-wrap: wrap;
+        font-size: 20px;
+    }
+    .imagens{
+        height: auto;
+        width: 100%;
+        margin: 0;
+    }
+    #logoNomeContainer {
+        left: 10px;
+        gap: 5px;
+    }
+
+    #logoFixed {
+        height: 40px;
+    }
+
+    #nomeSiteFixed {
+        font-size: 24px;
+    }
+}
+
+/* Estilos para o modo escuro */
+@media (prefers-color-scheme: dark) {
+    main{
+        background-color:#010d23;
+        color: azure;
+    }
+    .conteinernav_lista{
+        background-color: #084569
+    }
+    #conteinernav{
+        background-color: #177086;
+    }
+    /*Cabecario*/
+    header{
+        background-color:#09c9c5;
+    }
+    /*Os links que estão no main*/
+    #conteinernav{
+        background-color: #055c72;
+    }
+    
+    /*  #f4f4f2  #010d23 */
+    .navegacao{
+        color:rgb(0, 0, 0);
+        border: 2px solid #09c9c5;
+        background-color:#09c9c5;
+    }
+    .navegacao:hover{
+        color: rgb(0, 178, 222);
+        border: 2px solid #1e3359;
+        background-color:#1e3359;
+    }
+
+
+    #botao1{
+        color: rgb(0, 178, 222);
+        border: 2px solid #1e3359;
+        background-color:#1e3359;
+    }
+    #botao2, #botao3{
+        color:rgb(0, 0, 0);
+        border: 2px solid #09c9c5;
+        background-color:#09c9c5;
+    }
+    #botao2:hover, #botao3:hover{
+        color: rgb(0, 178, 222);
+        border: 2px solid #1e3359;
+        background-color:#1e3359;
+    }
+    hr{
+        background-color: rgb(183, 244, 244);
+    }
+}
