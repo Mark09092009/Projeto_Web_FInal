@@ -222,7 +222,7 @@ main{
     width: 100vh;
 }
 .noticias{
-    margin: 0 40px 0 0;
+    margin: 0 40px 0 40px;
     text-align: center;
 }
 .noticia{
