@@ -228,7 +228,7 @@ main{
 .noticia{
     text-align: center;
 }
-.paragrafos p, h2, h3, h4, h5, h6, li{
+.paragrafos, p h2 h3 h4 h5 h6 li{
     text-align: start;
     margin: 0 390px 0 ;
     font-size: 20px;
