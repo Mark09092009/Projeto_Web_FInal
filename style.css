@@ -233,6 +233,10 @@ main{
     margin: 0 390px 0 ;
     font-size: 20px;
 }
+.paragrafos li{
+    list-style: none;
+}
+
 .continuacao{
     margin: auto;
     width: 63%;
