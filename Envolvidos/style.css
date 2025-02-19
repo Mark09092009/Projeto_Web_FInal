@@ -253,6 +253,6 @@ footer{
         background-color: rgb(183, 244, 244);
     }
     #divicoiso{
-        color: rgb(183, 244, 244);
+        border-left: 3px solid rgb(183, 244, 244);
     }
 }
