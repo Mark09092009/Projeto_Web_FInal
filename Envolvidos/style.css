@@ -255,4 +255,7 @@ footer{
     #divicoiso{
         border-left: 3px solid rgb(183, 244, 244);
     }
+    a{
+        color: azure;
+    }
 }
