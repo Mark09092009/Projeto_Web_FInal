@@ -153,27 +153,27 @@ main{
     flex-direction: column;
     align-items: center;
     background-color: #055c72;
-    padding-top: 60px; /* 🔹 Adiciona espaço no topo quando fixo */
+    padding-top: 60px; /* Adiciona espaço no topo quando fixo */
 }
 
-/* 🔹 Garante que a logo fique fixa no topo */
+/* Garante que a logo fique fixa no topo */
 #logoNomeContainer {
     display: flex;
     align-items: center;
     gap: 10px;
     position: absolute;
     left: 20px;
-    top: 5px; /* 🔹 Ajusta a logo para o topo */
+    top: 5px; /* Ajusta a logo para o topo */
     height: 50px;
 }
 
-/* 🔹 Ajusta a altura da logo */
+/* Ajusta a altura da logo */
 #logoFixed {
     height: 50px;
     transition: height 0.3s ease-in-out;
 }
 
-/* 🔹 Ajusta o nome do site */
+/* Ajusta o nome do site */
 #nomeSiteFixed {
     font-size: 30px;
     font-family: "jersey";
@@ -181,7 +181,7 @@ main{
     transition: font-size 0.3s ease-in-out;
 }
 
-/* 🔹 Quando fixo, dá espaço extra para os links */
+/* Quando fixo, dá espaço extra para os links */
 .fixed #conteinernav {
     padding-top: 90px;
 }
@@ -269,11 +269,11 @@ footer{
 /*Telas menores/iguais a 1390px */
 @media (max-width:1390px){
     .fixed #conteinernav {
-        padding-top: 95px; /* 🔹 Adiciona espaço no topo quando fixo */
+        padding-top: 95px; /* Adiciona espaço no topo quando fixo */
         gap: 3px;
     }
     
-    /* 🔹 Quando fixo, dá espaço extra para os links */
+    /* Quando fixo, dá espaço extra para os links */
     .fixed #conteinernav {
         padding-top: 100px;
     }
